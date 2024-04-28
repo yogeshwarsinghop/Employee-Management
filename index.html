@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Employee Management System</h1>
+    <label for="department">Filter by Department :</label>
+    <select name="" id="department">
+        <option value="">--Select Department</option>
+        <option value="">HR</option>
+        <option value="">Finance</option>
+        <option value="">Marketing</option>
+        <option value="">Engineering</option>
+        <option value="">Operation</option>
+
+    </select>
+    <label for="gender">Filter by Gender:</label>
+    <select name="" id="gender">
+        <option value="">--Select Gender</option>
+        <option value="">Male</option>
+        <option value="">Female</option>
+
+    </select>
+    <label for="sort">Sort by Salary</label>
+    <select name="" id="Sort">
+        <option value="">--Select Order--</option>
+        <option value="">Low to High</option>
+        <option value="">High to Low</option>
+
+    </select>
+    <table id="Employee-TABLE">
+        <thead>
+            <tr">
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody id="Employee-DATA">
+
+        </tbody>
+
+    </table>
+    <button id="prev-btn" disabled>previous</button>
+    <button id="next-btn">next</button>  
+    <script src="index.js"></script>
+</body>
+</html>
